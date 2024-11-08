@@ -11,20 +11,15 @@ body{
     font-family: 'Raleway';
 }
 
-header{
-    margin: 30px;
-}
-
 .banner-content {
     background-image: 
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), /* Sombra na parte superior */
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
       url(/assets/images/banner.png),
       linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); /* Sombra na parte inferior */
     background-size: cover;
     background-position: center;
     height: 605px;
     text-align: center;
-    margin: 20px;
     position: relative;
     border-bottom: 2px solid #31A8DD; /* Linha superior como uma borda */
 }
@@ -115,6 +110,7 @@ h2{
 
 #transform-world{
     background-image: url(/assets/images/woman-code.png);
+    background-attachment: fixed;
     background-size: 100%;
     background-position: center;
     width: auto;
@@ -145,23 +141,27 @@ h2{
 #professional-challenges p{
     font-size: 16px;
     color: white;
-    width: 792px;
-    height: 76px;
-    position: relative;
-    left: 324px;
+
 }
 
 footer {
     color: white;
     border-top: 2px solid #31A8DD; /* Linha superior como uma borda */
-    padding-top: 30px; /* Espaço entre a borda e o conteúdo */
-    margin: 20px;
     text-align: center; /* Centraliza o conteúdo no footer */
+    background-image: linear-gradient( to bottom, black 60%, #31A8DD);
 }
 
+footer .dio-logo{
+    padding-top: 20px;
+}
 footer a {
     font-family: 'Raleway', sans-serif;
     color: #31A8DD;
     text-decoration: none;
     font-weight: bold;
+}
+
+footer p{
+    padding-bottom: 30px;
+    margin: 0px;
 }
